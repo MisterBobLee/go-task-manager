@@ -1,0 +1,16 @@
+.env
+pgdata/
+var/lib/postgresql/data/
+
+main
+*.exe
+*.out
+*.test
+
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+*.log
+*.tmp
