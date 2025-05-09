@@ -1,7 +1,31 @@
 ## 專案需求
-1. 下載並啟動docker desktop
-2. 下載並安裝go
-3. 下載或擁有pnpm並執行pnpm install
+以下為本專案的環境需求，請確認已安裝以下工具：
+
+[Docker官網](https://www.docker.com/products/docker-desktop)
+
+啟動 Docker Desktop 並確保 Docker Daemon 正常運行。
+
+Go (1.20 或以上)
+
+[Go官網](https://go.dev/dl/)
+
+```jsx
+go version
+```
+
+pnpm (8.x 或以上)
+
+安裝 pnpm：
+
+```jsx
+npm install -g pnpm
+```
+
+檢查版本：
+
+```jsx
+pnpm -v
+```
 
 ## 專案啟動指南
 本專案包含前端和後端部分，以下為啟動步驟：
