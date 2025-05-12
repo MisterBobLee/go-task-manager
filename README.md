@@ -35,16 +35,20 @@ pnpm -v
 
 ```jsx
 cd go-task-api
-echo "DB_URL=postgres://user:password@localhost:5432/mydb" > .env
-echo "JWT_SECRET=mysecretkey" >> .env
-echo "PORT=8080" >> .env
+```
+
+在後端目錄/go-task-api底下創建一個.env檔，並輸入其內容:
+
+```jsx
+DB_URL=postgres://postgres:secret@db:5432/go_task_db
+JWT_SECRET=mysecretkey
+PORT=8080
 ```
 
 使用 Docker Compose 啟動後端服務：
 
 ```jsx
 docker-compose up -d --build
-go run main.go
 ```
 
 注意： 啟動後，服務將在指定的容器端口運行，請確認 Docker 正常運作。
@@ -54,6 +58,12 @@ go run main.go
 
 ```jsx
 cd frontend-app
+```
+
+安裝 pnpm：
+
+```jsx
+pnpm install
 ```
 
 使用 pnpm 啟動開發伺服器：
